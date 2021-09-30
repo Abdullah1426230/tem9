@@ -1,0 +1,123 @@
+@import './normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root {
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desa_urated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Pale_blue);
+    background-image: url("./images/pattern-background-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 500px;
+    width: 95%;
+    margin: 10px auto;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.h2_p {
+    text-align: center;
+    padding: 10px;
+}
+
+.h2_p h1 {
+    color: var(--Dark_blue)
+}
+
+.h2_p p {
+    font-size: 18px;
+    width: 70%;
+    margin: auto;
+    line-height: 140%;
+    color: var(--Desa_urated_blue);
+}
+
+.pay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 11px;
+    background-color: var(--Very_pale_blue);
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+
+.pay img {
+    margin-right: 10px;
+}
+
+.pay a {
+    flex: 1;
+    text-align: right;
+    font-weight: 700;
+}
+
+.pay a:hover {
+    color: rgba(56, 41, 224, 0.7);
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    margin: 15px auto;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 8px;
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:first-of-type {
+    background-color: var(--Bright_blue);
+    box-shadow: 0px 5px 20px rgba(56, 41, 224, 0.7);
+    color: white;
+}
+
+button:first-of-type:hover {
+    background-color: rgba(56, 41, 224, 0.7);
+    box-shadow: 0px 0px;
+}
+
+button:last-of-type {
+    background-color: transparent;
+    color: var(--Desa_urated_blue);
+}
+
+button:last-of-type:hover {
+    color: var(--Dark_blue);
+}
+
+@media (max-width:768px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.png");
+    }
+}
